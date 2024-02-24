@@ -869,6 +869,19 @@ background-color: #ae67fa;
     row-gap: 0;
   }
 
+  .beyond_expect{
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 2rem;
+  }
+
+  .beyond_expect .beyond_expect__left{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    
+  }
+
   .future_here {
     column-gap: 0;
     flex-direction: column;
@@ -883,8 +896,30 @@ background-color: #ae67fa;
     width: 100%;
   }
 
+  .blog .all_art{
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .blog .right_art{
+    column-gap: 3rem;
+  }
+
+  .blog .one_minor_art{
+    margin-left: 0rem;
+  }
+
+  .blog .left_art {
+    flex-direction: row;
+    
+  }
+
+  .all_art .left_art img{
+    width: 50%;
+  }
+
   .footer{
-    padding: 196px 0px 103px
+    padding: 3rem 0px 103px
   }
 
   .footer .footer__bottom_right{
@@ -952,19 +987,17 @@ background-color: #ae67fa;
     .container__content {
     line-height: 1.5;
   }
-  
-  .beyond_expect{
+
+
+
+  .blog .left_art {
     flex-direction: column;
-    align-items: center;
-    margin: 1rem 0 2rem;
   }
 
-  .beyond_expect .beyond_expect__left{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
-    
+  .all_art .left_art img{
+    width: 100%;
   }
+
 
   .registration .left__registration .container__content{
     font-size: 15px;
@@ -1011,27 +1044,6 @@ background-color: #ae67fa;
   .future_here{
     margin-bottom: 6rem;
   }
-
-  .blog .all_art{
-    flex-direction: column;
-    row-gap: 2rem;
-  }
-
-  .blog .right_art{
-    column-gap: 3rem;
-  }
-
-  .blog .one_minor_art{
-    margin-left: 0rem;
-  }
-
-  .blog .left_art {
-    flex-direction: row;
-  }
-
-  .all_art .left_art img{
-    width: 50%;
-  }
 }
 
 @media screen and (max-width: 765px) {
@@ -1077,5 +1089,19 @@ background-color: #ae67fa;
 
   .hero_section .hero_section__right img{
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .registration{
+    flex-direction: column;
+  }
+
+  .registration .left__registration{
+    margin-bottom: 2rem;
+  }
+
+  .footer .footer__bottom_right{
+    column-gap: 4rem;
   }
 }
